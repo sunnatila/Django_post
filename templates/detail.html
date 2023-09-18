@@ -1,0 +1,8 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{{object.title}}</h1>
+    <p><strong>{{ object.at_time.date }}</strong> | author: <strong>{{ object.author }}</strong></p>
+    <p>{{ object.body }}</p>
+{% endblock content %}
